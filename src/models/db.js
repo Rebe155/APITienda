@@ -11,10 +11,10 @@ const connection = mysql.createConnection({
 
 connection.connect(error => {
     if (error) {
-        console.error('❌ Error de conexión a la base de datos:', error.message);
-        process.exit(1); // Se detiene el servidor si falla
+        console.error('Error de conexión a la base de datos:', error.message);
+        process.exit(1); 
     } else {
-        console.log('✅ Conexión exitosa a la base de datos.');
+        console.log('Conexión exitosa a la base de datos.');
     }
 });
 
