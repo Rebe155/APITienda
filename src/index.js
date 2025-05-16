@@ -25,10 +25,10 @@ app.use('/api', limiter);
 // Rutas
 app.use('/api', librosRoutes);
 
-// Manejador de rutas para manejar rutas no definidas
 app.get('/', (req, res) => {
-    res.send('Bienvenido a la API');
+  res.send('API funcionando');
 });
+
 
 // Puerto
 const PORT = process.env.PORT || 3000;
